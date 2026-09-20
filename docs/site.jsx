@@ -33,11 +33,11 @@ let x=track.clientWidth+80;
 const initTypes=[];
 for(let i=0;i<3;i++){const type=TYPE_KEYS[Math.floor(Math.random()*TYPE_KEYS.length)];initTypes.push(type);obstacles.push({x,type,slot:i,jumped:false});x+=BB[type].w*CELL+gap();}
 setObsTypes(initTypes);
-let jumping=false,jumpStart=0;const JUMP_MS=640,JUMP_H=50,TRIGGER_X=94;
+let jumping=false,jumpStart=0;const JUMP_MS=420,JUMP_H=54,TRIGGER_X=168;
 let raf,last=performance.now();
 function frame(now){
 const dt=Math.min(32,now-last);last=now;
-const speed=0.12;
+const speed=0.36;
 obstacles.forEach(o=>{o.x-=speed*dt;});
 if(obstacles[0].x+BB[obstacles[0].type].w*CELL<-40){
 obstacles.shift();

@@ -1,0 +1,41 @@
+:root{
+/* base */
+--white:#ffffff;
+--cream:#f4f1ea;
+--cream-deep:#ece7db;
+--ink:#101014;
+--ink-soft:#4a4a52;
+--ink-faint:#8a8a92;
+--line:#101014;
+--grid-line:rgba(16,16,20,.07);
+/* accents */
+--indigo:#3f4fc4;
+--indigo-deep:#2a37a0;
+--indigo-dim:#dfe2fa;
+--teal:#00b3a4;
+--teal-deep:#00857a;
+--teal-dim:#cdf3ee;
+--amber:#ffb020;
+/* dark terminal panels */
+--panel:#101014;
+--panel-line:#2a2a32;
+--panel-fg:#eef0ee;
+--panel-fg-dim:#9aa0a6;
+/* semantic */
+--bg:var(--cream);
+--bg-alt:var(--white);
+--surface:var(--white);
+--surface-sunken:var(--cream-deep);
+--text-body:var(--ink);
+--text-soft:var(--ink-soft);
+--text-faint:var(--ink-faint);
+--text-on-dark:var(--panel-fg);
+--accent-primary:var(--indigo);
+--accent-secondary:var(--teal);
+--border-default:var(--line);
+--danger:#e0264d;
+--success:var(--teal-deep);
+--warning:var(--amber);
+--link:var(--indigo-deep);
+--link-hover:var(--indigo);
+}

@@ -1,0 +1,13 @@
+@import url('tokens/colors.css');
+@import url('tokens/typography.css');
+@import url('tokens/spacing.css');
+@import url('tokens/effects.css');
+.badge-shimmer{cursor:default;transition:transform .25s ease,box-shadow .25s ease}
+.badge-shimmer:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.10)}
+.badge-shimmer::before{content:'';position:absolute;inset:0;background:linear-gradient(115deg,transparent 10%,rgba(255,255,255,.5) 25%,rgba(255,105,180,.4) 38%,rgba(255,221,120,.35) 50%,rgba(120,220,255,.4) 62%,rgba(190,120,255,.35) 78%,transparent 92%);background-size:250% 250%;background-position:0% 50%;opacity:0;transition:opacity .3s ease;pointer-events:none;mix-blend-mode:overlay}
+.badge-shimmer:hover::before{opacity:1;animation:badgeShimmerMove 1.2s ease-in-out infinite}
+@keyframes badgeShimmerMove{0%{background-position:0% 50%}100%{background-position:100% 50%}}
+.blogpost-dogear{opacity:0;transform:scale(.7);transform-origin:top right;transition:opacity .25s ease,transform .25s ease}
+.blogpost-card:hover .blogpost-dogear{opacity:1;transform:scale(1)}
+.gallery-tile-pin{opacity:0;transform:translateY(-70px) rotate(-14deg) scale(.85);transition:transform .5s cubic-bezier(.34,1.56,.64,1),opacity .2s ease}
+.gallery-tile:hover .gallery-tile-pin{opacity:1;transform:translateY(0) rotate(-14deg) scale(1)}

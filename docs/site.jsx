@@ -245,8 +245,8 @@ function Contact(){
 return(<div style={{padding:'60px 32px 100px',maxWidth:760,margin:'0 auto'}}>
 <SectionHeading eyebrow="Contact" title="Get In Touch" />
 <div style={{display:'flex',gap:12,flexWrap:'wrap'}}>
-<SocialLink platform="linkedin" label="LinkedIn" href="#" />
-<SocialLink platform="github" label="GitHub" href="#" />
+<SocialLink platform="linkedin" label="LinkedIn" href="https://www.linkedin.com/in/jessica-chen-utd/" />
+<SocialLink platform="github" label="GitHub" href="https://github.com/jess4342" />
 </div>
 </div>);
 }
